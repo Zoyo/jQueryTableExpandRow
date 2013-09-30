@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>ExpandRow jQuery TESTE</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="jQueryExpandRowTeste.js"></script>
+	</head>
+	
+	<body>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>+</th>
+					<th>Coluna 1</th>
+					<th>Coluna 2</th>
+					<th>Coluna 3</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="rowHeader">
+					<td class="clickSignal"><span>+</span></td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr class="rowDetail">
+					<td colspan="2">a</td>
+					<td>b</td>
+					<td>c</td>
+				</tr>
+				<tr class="rowHeader">
+					<td class="clickSignal"><span>+</span></td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				<tr class="rowDetail">
+					<td colspan="2">e</td>
+					<td>f</td>
+					<td>g</td>
+				</tr>
+				<tr class="rowDetail">
+					<td colspan="2">h</td>
+					<td>i</td>
+					<td>j</td>
+				</tr>
+				<tr class="rowHeader">
+					<td class="clickSignal"><span>+</span></td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				<tr class="rowDetail">
+					<td colspan="2">e</td>
+					<td>f</td>
+					<td>g</td>
+				</tr>
+				<tr class="rowDetail">
+					<td colspan="2">h</td>
+					<td>i</td>
+					<td>j</td>
+				</tr>				<tr class="rowDetail">
+					<td colspan="2">h</td>
+					<td>i</td>
+					<td>j</td>
+				</tr>				<tr class="rowDetail">
+					<td colspan="2">h</td>
+					<td>i</td>
+					<td>j</td>
+				</tr>				<tr class="rowDetail">
+					<td colspan="2">h</td>
+					<td>i</td>
+					<td>j</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="4">
+						<input type="button" onclick="$('table tbody tr:odd').toggle();" value="Click"/>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
