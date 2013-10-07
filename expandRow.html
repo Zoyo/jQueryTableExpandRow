@@ -9,6 +9,7 @@
 		<table border="1">
 			<thead>
 				<tr>
+					<th></th>
 					<th>+</th>
 					<th>Coluna 1</th>
 					<th>Coluna 2</th>
@@ -17,68 +18,111 @@
 			</thead>
 			<tbody>
 				<tr class="rowHeader">
+					<td><input type="radio" name="organizar" /></td>
 					<td class="clickSignal">+</td>
 					<td>2</td>
 					<td>3</td>
 					<td>4</td>
 				</tr>
 				<tr class="rowDetail">
+					<td></td>
 					<td colspan="2">a</td>
 					<td>b</td>
 					<td>c</td>
 				</tr>
 				<tr class="rowHeader">
+					<td><input type="radio" name="organizar" /></td>
 					<td class="clickSignal">+</td>
 					<td>6</td>
 					<td>7</td>
 					<td>8</td>
 				</tr>
 				<tr class="rowDetail">
+					<td></td>
 					<td colspan="2">e</td>
 					<td>f</td>
 					<td>g</td>
 				</tr>
 				<tr class="rowDetail">
+					<td></td>
 					<td colspan="2">h</td>
 					<td>i</td>
 					<td>j</td>
 				</tr>
 				<tr class="rowHeader">
+					<td><input type="radio" name="organizar" /></td>
 					<td class="clickSignal">+</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
+					<td>54</td>
+					<td>78</td>
+					<td>11</td>
+				</tr>
+				<tr class="rowHeader">
+					<td><input type="radio" name="organizar" /></td>
+					<td class="clickSignal">+</td>
+					<td>100</td>
+					<td>200</td>
+					<td>300</td>
 				</tr>
 				<tr class="rowDetail">
+					<td></td>
 					<td colspan="2">e</td>
 					<td>f</td>
 					<td>g</td>
 				</tr>
 				<tr class="rowDetail">
+					<td></td>
 					<td colspan="2">h</td>
 					<td>i</td>
 					<td>j</td>
 				</tr>
 				<tr class="rowDetail">
+					<td></td>
 					<td colspan="2">h</td>
 					<td>i</td>
 					<td>j</td>
 				</tr>
 				<tr class="rowDetail">
+					<td></td>
 					<td colspan="2">h</td>
 					<td>i</td>
 					<td>j</td>
 				</tr>
 				<tr class="rowDetail">
+					<td></td>
 					<td colspan="2">h</td>
 					<td>i</td>
 					<td>j</td>
 				</tr>
+				<tr class="rowHeader">
+					<td><input type="radio" name="organizar" /></td>
+					<td class="clickSignal">+</td>
+					<td>12</td>
+					<td>22</td>
+					<td>32</td>
+				</tr>
+				<tr class="rowDetail">
+					<td></td>
+					<td colspan="2">e</td>
+					<td>f</td>
+					<td>g</td>
+				</tr>
+				<tr class="rowDetail">
+					<td></td>
+					<td colspan="2">y</td>
+					<td>z</td>
+					<td>x</td>
+				</tr>				
 			</tbody>
 			<tfoot>
 				<tr>
-					<td colspan="4">
-						<input type="button" onclick="$('table tbody tr:odd').toggle();" value="Click"/>
+					<td colspan="3">
+						<input type="button" onclick="$('table tbody tr.rowDetail').toggle();" value="Click"/>
+					</td>
+					<td align="center">
+						<input type="button" value="&or;" onclick="movimentaLinhaAbaixo()"/>
+					</td>
+					<td align="center">
+						<input type="button" value="&and;" onclick="movimentaLinhaAcima();"/>
 					</td>
 				</tr>
 			</tfoot>
